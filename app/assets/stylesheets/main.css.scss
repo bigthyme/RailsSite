@@ -7,6 +7,7 @@
 /* Universal Styles */
 html {
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 body {
@@ -34,9 +35,78 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 }
 
-/* Boostrap Override */
+h1 {
+	font-size: 3em;
+	letter-spacing: -2px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.7em;
+	letter-spacing: -1px;
+	margin-bottom: 	30px;
+	font-weight: 600;
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 1.7em;	
+}
+
+/* Header */
 .navbar-inner {
 	border-radius: 1px !important;
 	-webkit-border-radius: 1px !important;
 	-moz-border-radius: 1px !important;
+}
+
+#logo {
+	float: left;
+	text-shadow: 0px 0px 1px #676767;
+	margin-right: 10px;
+	font-size: 1.6em;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	padding-top: 10px;
+	font-weight: 800;
+	line-height: 1;
+}
+
+/* Footer */
+#footer {
+	position: fixed;
+	bottom: 0px;
+	background: #3D3D3D;
+	padding-top: 10px;
+	height: 50px;
+	text-indent: 20px;
+	width: 100%;
+}
+
+.muted {
+	margin-top: 10px;
+	position: absolute;
+	right: 15px;
+	color: #B6B6B6
+}
+
+.breadcrumb {
+	position: absolute;
+	left: 15px;
+	background: inherit;
+	margin-top: 5px;
+}
+
+.breadcrumb a {
+	color: #B6B6B6;
+}
+
+.breadcrumb a:hover {
+	color: #08C;
+}
+
+.breadcrumb li {
+	text-shadow: 0px 0px 0px;
 }
