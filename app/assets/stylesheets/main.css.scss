@@ -126,8 +126,16 @@ p {
 }
 	#myCarousel {
 	  margin-top: 0px;
+	  position: relative;
+	  left: 150px;
 	}
 
+	.carousel-inner {
+		overflow: hidden;
+		width: 650px;
+		position: relative;
+	}
+	
 	.carousel-linked-nav,
 	.item img {
 	  display: block; 
@@ -172,7 +180,7 @@ p {
 	    vertical-align: middle;
 	    margin-bottom: 0px !important;
 	    position: relative;
-	    left: 432px;
+	    left: 450px;
 	    height: 25px;
 	    bottom: 15px;
 	}
