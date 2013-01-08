@@ -6,12 +6,14 @@
 
 /* Universal Styles */
 html {
-	/*overflow-y: scroll;*/
+	overflow-y: scroll;
 	overflow-x: hidden;
 }
 
 body {
 	padding-top: 0px;
+	background: url('http://f.cl.ly/items/291Z1K371I0U083A3o03/sf_bg.png') no-repeat;
+	background-size: 100%;
 }
 
 section {
@@ -83,6 +85,7 @@ p {
 	height: 50px;
 	text-indent: 20px;
 	width: 100%;
+	z-index:99999;
 }
 
 .muted {
@@ -110,3 +113,66 @@ p {
 .breadcrumb li {
 	text-shadow: 0px 0px 0px;
 }
+
+/* Hero Unit */
+.hero-unit {
+	background: #D8D8D8;
+}
+
+/* Carousel */
+
+#carousel-container {
+	width: 700px;
+}
+	#myCarousel {
+	  margin-top: 0px;
+	}
+
+	.carousel-linked-nav,
+	.item img {
+	  display: block; 
+	  margin: 0 auto;
+	}
+
+	.pagination a {
+	  display: inline-block;
+	  background: #696969;
+	  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0    rgba(0, 0, 0, 0.1);
+	  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0,  0, 0, 0.1);
+	  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	  border-radius: 15px;
+	  height: 11px;
+	  width: 11px;
+	  display: block;
+	  text-indent: -1000px;
+	  float: left;
+	  margin-right: 7px;
+	  cursor: pointer;
+	  padding: 0px !important;
+	  border: 0px solid !important;
+	}
+
+	.pagination li:first-child a {
+	    border-left-width: 0px !important;
+	    -webkit-border-radius: 11px !important;
+	    -moz-border-radius: 11px !important;
+	    border-radius: 11px !important;
+	}
+
+	.pagination li:last-child a {
+	    border-left-width: 0px !important;
+	    -webkit-border-radius: 11px !important;
+	    -moz-border-radius: 11px !important;
+	    border-radius: 11px !important;
+	}
+
+	.carousel-linked-nav {
+	    width: 0px !important;
+	    display: table-cell;
+	    vertical-align: middle;
+	    margin-bottom: 0px !important;
+	    position: relative;
+	    left: 432px;
+	    height: 25px;
+	    bottom: 15px;
+	}

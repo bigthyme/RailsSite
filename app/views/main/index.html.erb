@@ -1,29 +1,62 @@
-<div class="center hero-unit">
-<h1>Bay Equities</h1>
+<div class="center">
+  <!-- Carousel -->
+  <p><%= render "layouts/carousel" %></p>
+    <!--<h1>Bay Equities</h1>
 
-<h3>
-	We take your money and turn it into gold.
-</h3>
-<!-- Button to trigger modal -->
-<a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal">Learn More</a>
+    <h3>
+    	We take your money and turn it into gold.
+    </h3>-->
+    <!-- Button to trigger modal -->
+    <a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal">Learn More</a>
 
-<!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Test Modal</h3>
-  </div>
-  <div class="modal-body">
-    <p>One fine body…</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary">Submit</button>
-  </div>
+    <!-- Modal -->
+    <%= render "layouts/modal" %>
 </div>
 
 <script type="text/javascript">
-	$('#myModal').modal(options);
+// Invoke the carousel
+$('#myCarousel').carousel({
+  interval: 5000
+});
+
+/* SLIDE ON CLICK */ 
+
+$('.carousel-linked-nav > li > a').click(function() {
+
+    // grab href, remove pound sign, convert to number
+    var item = Number($(this).attr('href').substring(1));
+
+    // slide to number -1 (account for zero indexing)
+    $('#myCarousel').carousel(item - 1);
+
+    // remove current active class
+    $('.carousel-linked-nav .active').removeClass('active');
+
+    // add active class to just clicked on item
+    $(this).parent().addClass('active');
+
+    // don't follow the link
+    return false;
+});
+
+/* AUTOPLAY NAV HIGHLIGHT */
+
+// bind 'slid' function
+$('#myCarousel').bind('slid', function() {
+
+    // remove active class
+    $('.carousel-linked-nav .active').removeClass('active');
+
+    // get index of currently active item
+    var idx = $('#myCarousel .item.active').index();
+
+    // select currently active item and add active class
+    $('.carousel-linked-nav li:eq(' + idx + ')').addClass('active');
+
+});
+
+  // active modal
+  $('#myModal').modal(options);
 </script>
 
 
