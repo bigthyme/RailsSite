@@ -125,23 +125,23 @@ p {
 	background: #D8D8D8;
 }
 
-#thumb_1 {
-	border-right: 1px solid #696969;
-	padding-right: 13px;
-}
+	#thumb_1 {
+		border-right: 1px solid #696969;
+		padding-right: 13px;
+	}
 
-#thumb_2 {
-	border-right: 1px solid #696969;
-	padding-right: 13px;
-}
+	#thumb_2 {
+		border-right: 1px solid #696969;
+		padding-right: 13px;
+	}
 
-#thumb_3 {
-	padding-right: 14px;
-}
+	#thumb_3 {
+		padding-right: 14px;
+	}
 
-.page-header {
-	border-bottom: 1px solid #CCC;
-}
+	.page-header {
+		border-bottom: 1px solid #CCC;
+	}
 
 /* Carousel */
 
@@ -202,3 +202,19 @@ p {
 	    height: 25px;
 	    bottom: 48px;
 	}
+
+/* Services */
+#service-container {
+	background: rgba(255, 255, 255, 0.6);
+	border: 1px solid #B1B1B1;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+/* Contact Us */
+#contact-container {
+	background: rgba(255, 255, 255, 0.6);
+	border: 1px solid #B1B1B1;
+	border-radius: 5px;
+	padding: 15px;
+}
