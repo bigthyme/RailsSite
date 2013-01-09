@@ -17,3 +17,18 @@
 </div>
 </body>
 </html>
+<script type="text/javascript">
+	$('.navbar .nav > li').click(function(){
+		current_nav = $(this).hasClass('.active');
+		console.log(current_nav);
+		/*
+		active_nav = $('.navbar .nav > li > .active > a');
+		if(current_nav = active_nav){
+			alert('hello');
+		}
+		else {
+			alert('goodbye');
+		}
+		*/
+	});
+</script>
