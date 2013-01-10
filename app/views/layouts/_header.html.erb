@@ -2,9 +2,9 @@
   <div class="navbar-inner">
     <a class="brand" id="logo">Bay Equities</a>
     <ul class="nav">
-      <li class="active"><%= link_to "Home", "index" %></li>
-      <li><%= link_to "Services", "services" %></li>
-      <li><%= link_to "Contact Us", "contact" %></li>
+    	<li class="<%=is_active('index')%>"><%= link_to "Home", "index" %></li>
+		<li class="<%=is_active('services')%>"><%= link_to "Services", "services" %></li>
+		<li class="<%=is_active('contact')%>"><%= link_to "Contact Us", "contact" %></li>
     </ul>
   </div>
 </header>

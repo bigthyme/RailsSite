@@ -48,9 +48,15 @@
 	    	</p>
 	    	<div class="center span9">
 	    		<p>
-	    			<a href="#myModal" role="button" class="btn btn-warning 	btn-primary btn-large" data-toggle="modal">Learn More</a>
+	    			<a href="#myModal" role="button" class="btn btn-warning btn-large" data-toggle="modal">Learn More</a>
+	    			<%= render "layouts/modal" %>
 	    		</p>
 	    	</div>
 	    </div>
 	</div>
 </div>
+
+<script type="text/javascript">
+  // active modal
+  $('#myModal').modal(options);
+</script>
