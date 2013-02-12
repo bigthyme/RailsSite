@@ -8,18 +8,28 @@
         Enter your Information below and <br>
         we'll contact you as soon as possible:
     </p>
-    <div class="input-prepend">
-      <span class="add-on"><i class="icon-user"></i></span>
-      <!-- <input class="span3" id="prependedInput" type="text" placeholder="Your Name..."> -->
-      <%= text_field(:person, :name) %>
-    </div>
-    <div class="input-prepend">
-      <span class="add-on"><i class="icon-envelope"></i></span>
-      <!-- <input class="span3" id="appendedInput" type="text" placeholder="Your Email..."> -->
-      <%= email_field(:user, :address) %>
-    </div>
+
+    <%= form_for (User.new) do |f|%>
+      <p>
+        <div class="input-prepend">
+          <span class="add-on"><i class="icon-user"></i></span>
+          <%= f.text_field :name, :placeholder => 'Full Name...' %>
+        </div>
+      </p>
+      
+      <p>
+        <div class="input-prepend">
+          <span class="add-on"><i class="icon-envelope"></i></span>     
+          <%= f.text_field :email, :placeholder => 'Email...' %>
+        </div>
+      </p>
+
+      <p>
+
+        <%= f.submit 'Submit', :class => 'btn btn-large btn-success' %>
+      </p>
+    <% end %>
 </div>
     <div class="center modal-footer">
-    <button id="form-submit"class="btn btn-large btn-success">Submit</button>
   </div>
 </div>
