@@ -10,14 +10,16 @@
     </p>
     <div class="input-prepend">
       <span class="add-on"><i class="icon-user"></i></span>
-      <input class="span3" id="prependedInput" type="text" placeholder="Your Name...">
+      <!-- <input class="span3" id="prependedInput" type="text" placeholder="Your Name..."> -->
+      <%= text_field(:person, :name) %>
     </div>
     <div class="input-prepend">
       <span class="add-on"><i class="icon-envelope"></i></span>
-      <input class="span3" id="appendedInput" type="text" placeholder="Your Email...">
+      <!-- <input class="span3" id="appendedInput" type="text" placeholder="Your Email..."> -->
+      <%= email_field(:user, :address) %>
     </div>
 </div>
     <div class="center modal-footer">
-    <button class="btn btn-large btn-success">Submit</button>
+    <button id="form-submit"class="btn btn-large btn-success">Submit</button>
   </div>
 </div>

@@ -88,8 +88,17 @@ $('#myCarousel').bind('slid', function() {
 
 });
  
-  // active modal
-  $('#myModal').modal(options);
+  // Activate modal
+  $('#myModal').modal({
+       show : false,
+       keyboard : true,
+       backdrop : true
+    });
+
+  //
+  $("form :input").change(function() {
+    console.log($(this).closest('form').serialize());
+   });
 </script>
 
 
